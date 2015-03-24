@@ -75,7 +75,7 @@ function VerbalDate(hours12, militaryTime){
 			if (hour == 0) {
 				hourStr += "Zero dark";
 			} else {
-				hourStr += hour < 12 && military ? 'oh ' : '';
+				hourStr += hour < 10 && military ? 'oh ' : '';
 				hourStr += convert(hour > 12 && hours ? hour - 12 : hour, false);
 			}
 			return hourStr;
